@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회식 날짜 투표기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>회식 날짜 투표기</h1>
+        <button id="voteButton">투표하기</button>
+        <div id="selection" style="display: none;">
+            <h2>요일과 시간을 선택하세요</h2>
+            <label for="daySelect">요일: </label>
+            <select id="daySelect">
+                <option value="월요일">월요일</option>
+                <option value="화요일">화요일</option>
+                <option value="수요일">수요일</option>
+                <option value="목요일">목요일</option>
+                <option value="금요일">금요일</option>
+            </select>
+            <label for="timeSelect">시간: </label>
+            <select id="timeSelect">
+                <option value="점심">점심</option>
+                <option value="저녁">저녁</option>
+            </select>
+            <button id="confirmButton">확인</button>
+        </div>
+        <div id="confirmation" style="display: none;">
+            <h2>투표가 완료되었습니다.</h2>
+            <button id="viewResultsButton">투표 결과 보기</button>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>결정된 날짜</h2>
+            <p id="finalResult"></p>
+            <h3>투표 결과</h3>
+            <ul id="voteResults"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
